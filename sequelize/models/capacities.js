@@ -1,8 +1,8 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../index");
 
-const Function = sequelize.define(
-    "Function",
+const Capacity = sequelize.define(
+    "Capacity",
     {
         id: {
             type: Sequelize.INTEGER,
@@ -10,7 +10,7 @@ const Function = sequelize.define(
             primaryKey: true,
             autoIncrement: true
         },
-        function: {
+        Capacity: {
             type: Sequelize.STRING,
             allowNull: false
         }
@@ -18,4 +18,4 @@ const Function = sequelize.define(
     {}
 );
 
-module.export = Function;
+module.export = Capacity;

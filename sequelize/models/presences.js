@@ -1,16 +1,15 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../index");
 
-const Attendance = sequelize.define(
-    "Attendance",
+const Presence = sequelize.define(
+    "Presence",
     {
         id: {
             type: Sequelize.INTEGER,
             allowNull: false,
-            primaryKey: true,
-            autoIncrement: true
+            primaryKey: true
         },
-        attendance: {
+        presence: {
             type: Sequelize.STRING,
             allowNull: false
         }
@@ -18,4 +17,4 @@ const Attendance = sequelize.define(
     {}
 );
 
-module.export = Attendance;
+module.export = Presence;
