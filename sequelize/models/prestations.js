@@ -5,7 +5,7 @@ const Prestation = sequelize.define(
     "Prestation",
     {
         id: {
-            type: Sequelize.UUID,
+            type: Sequelize.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
@@ -38,4 +38,4 @@ const Prestation = sequelize.define(
     {}
 );
 
-module.export = Prestation;
+module.exports = Prestation;

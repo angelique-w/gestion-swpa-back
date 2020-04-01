@@ -15,7 +15,7 @@ const Contract = sequelize.define(
             allowNull: false
         }
     },
-    {}
+    { timestamps: false }
 );
 
-module.export = Contract;
+module.exports = Contract;

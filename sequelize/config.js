@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === "test") {
     database = process.env.DB_DATABASE_TEST;
 }
 
-const config = {
+const conf = {
     host,
     username,
     password,
@@ -19,4 +19,4 @@ const config = {
     logging: false
 };
 
-module.exports = config;
+module.exports = conf;

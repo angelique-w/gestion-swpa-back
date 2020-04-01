@@ -10,12 +10,12 @@ const Capacity = sequelize.define(
             primaryKey: true,
             autoIncrement: true
         },
-        Capacity: {
+        capacity: {
             type: Sequelize.STRING,
             allowNull: false
         }
     },
-    {}
+    { timestamps: false }
 );
 
-module.export = Capacity;
+module.exports = Capacity;
