@@ -8,33 +8,45 @@ const User = sequelize.define(
             type: Sequelize.UUID,
             allowNull: false,
             primaryKey: true,
-            defaultValue: Sequelize.UUIDV4
+            defaultValue: Sequelize.UUIDV4,
         },
         name: {
             type: Sequelize.STRING,
-            allowNull: false
+            allowNull: false,
         },
         firstname: {
             type: Sequelize.STRING,
-            allowNull: false
+            allowNull: false,
         },
         address: {
             type: Sequelize.TEXT,
-            allowNull: true
+            allowNull: true,
         },
         phoneNumber: {
             type: Sequelize.STRING,
-            allowNull: true
+            allowNull: true,
         },
         eMail: {
             type: Sequelize.STRING,
-            allowNull: true
+            allowNull: true,
         },
         password: {
             type: Sequelize.STRING,
             allowNull: false,
-            defaultValue: "piperade"
-        }
+            defaultValue: "piperade",
+        },
+        funcAdmin: {
+            type: Sequelize.STRING,
+            allowNull: true,
+        },
+        capacityId: {
+            type: Sequelize.INTEGER,
+            allowNull: true,
+        },
+        roleId: {
+            type: Sequelize.INTEGER,
+            allowNull: true,
+        },
     },
     {}
 );

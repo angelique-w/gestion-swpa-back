@@ -5,11 +5,11 @@ const Prestation = require("./models/prestations");
 const Contract = require("./models/contracts");
 const Show = require("./models/shows");
 
-User.belongsTo(Role);
-Role.hasMany(User);
+User.belongsTo(Role, { foreignKey: "roleId" });
+Role.hasMany(User, { foreignKey: "roleId" });
 
-User.belongsTo(Capacity);
-Capacity.hasMany(User);
+User.belongsTo(Capacity, { foreignKey: "capacityId" });
+Capacity.hasMany(User, { foreignKey: "capacityId" });
 
 Prestation.belongsTo(Contract);
 Contract.hasMany(Prestation);

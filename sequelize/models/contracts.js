@@ -8,12 +8,12 @@ const Contract = sequelize.define(
             type: Sequelize.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
+            // autoIncrement: true
         },
         contract: {
             type: Sequelize.STRING,
-            allowNull: false
-        }
+            allowNull: false,
+        },
     },
     { timestamps: false }
 );

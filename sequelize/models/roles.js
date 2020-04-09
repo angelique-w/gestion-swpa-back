@@ -8,12 +8,12 @@ const Role = sequelize.define(
             type: Sequelize.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
+            // autoIncrement: true
         },
         role: {
             type: Sequelize.STRING,
-            allowNull: false
-        }
+            allowNull: false,
+        },
     },
     { timestamps: false }
 );

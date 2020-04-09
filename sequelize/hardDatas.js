@@ -4,19 +4,19 @@ const Capacity = require("./models/capacities");
 const Contract = require("./models/contracts");
 const User = require("./models/users");
 
-Role.create({ role: "superAdmin" });
-Role.create({ role: "admin" });
-Role.create({ role: "member" });
-Capacity.create({ capacity: "piper" });
-Capacity.create({ capacity: "snare" });
-Capacity.create({ capacity: "tenor" });
-Capacity.create({ capacity: "bass" });
-Capacity.create({ capacity: "flag" });
-Contract.create({ contract: "PB" });
-Contract.create({ contract: "1/2 PB" });
-Contract.create({ contract: "autre" });
+Role.create({ id: 1, role: "superAdmin" });
+Role.create({ id: 2, role: "admin" });
+Role.create({ id: 3, role: "member" });
+Capacity.create({ id: 1, capacity: "piper" });
+Capacity.create({ id: 2, capacity: "snare" });
+Capacity.create({ id: 3, capacity: "tenor" });
+Capacity.create({ id: 4, capacity: "bass" });
+Capacity.create({ id: 5, capacity: "flag" });
+Contract.create({ id: 1, contract: "PB" });
+Contract.create({ id: 2, contract: "1/2 PB" });
+Contract.create({ id: 3, contract: "autre" });
 User.create({
-    name: "superAdmin",
+    name: "Wons",
     firstname: "Angelique",
-    password: "angeliqueSuperAdmin"
+    password: "angeliqueSuperAdmin",
 });
