@@ -16,3 +16,7 @@ Contract.hasMany(Prestation, { foreignKey: "contractId" });
 
 User.belongsToMany(Prestation, { through: User_Prestation });
 Prestation.belongsToMany(User, { through: User_Prestation });
+User.hasMany(User_Prestation);
+User_Prestation.belongsTo(User);
+Prestation.hasMany(User_Prestation);
+User_Prestation.belongsTo(Prestation);

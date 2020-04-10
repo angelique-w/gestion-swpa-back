@@ -19,4 +19,6 @@ User.create({
     name: "Wons",
     firstname: "Angelique",
     password: "angeliqueSuperAdmin",
+    capacityId: 1,
+    roleId: 1,
 });

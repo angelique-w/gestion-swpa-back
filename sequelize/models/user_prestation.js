@@ -4,19 +4,14 @@ const sequelize = require("../index");
 const User_Prestation = sequelize.define(
     "User_Prestation",
     {
-        id: {
-            type: Sequelize.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true,
-        },
         presence: {
             type: Sequelize.STRING,
             allowNull: false,
         },
         car: {
             type: Sequelize.BOOLEAN,
-            allowNull: true,
+            allowNull: false,
+            defaultValue: false,
         },
     },
     { timestamps: false }
