@@ -11,8 +11,8 @@ Role.hasMany(User, { foreignKey: "roleId" });
 User.belongsTo(Capacity, { foreignKey: "capacityId" });
 Capacity.hasMany(User, { foreignKey: "capacityId" });
 
-Prestation.belongsTo(Contract);
-Contract.hasMany(Prestation);
+Prestation.belongsTo(Contract, { foreignKey: "contractId" });
+Contract.hasMany(Prestation, { foreignKey: "contractId" });
 
 User.belongsToMany(Prestation, { through: Show });
 Prestation.belongsToMany(User, { through: Show });

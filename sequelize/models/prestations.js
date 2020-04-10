@@ -8,32 +8,36 @@ const Prestation = sequelize.define(
             type: Sequelize.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
         },
         location: {
             type: Sequelize.STRING,
-            allowNull: false
+            allowNull: false,
         },
         date: {
             type: Sequelize.DATEONLY,
-            allowNull: false
+            allowNull: false,
         },
         arrivingTime: {
             type: Sequelize.TIME,
-            allowNull: true
+            allowNull: true,
         },
         departureTime: {
             type: Sequelize.TIME,
-            allowNull: true
+            allowNull: true,
         },
         description: {
             type: Sequelize.STRING,
-            allowNull: true
+            allowNull: true,
         },
         comments: {
             type: Sequelize.STRING,
-            allowNull: true
-        }
+            allowNull: true,
+        },
+        contractId: {
+            type: Sequelize.INTEGER,
+            allowNull: true,
+        },
     },
     {}
 );
