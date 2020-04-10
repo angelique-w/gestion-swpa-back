@@ -1,21 +1,20 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../index");
 
-const Show = sequelize.define(
-    "Show",
+const Role = sequelize.define(
+    "Role",
     {
         id: {
             type: Sequelize.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
         },
-        presence: {
+        role: {
             type: Sequelize.STRING,
-            allowNull: false
-        }
+            allowNull: false,
+        },
     },
     { timestamps: false }
 );
 
-module.exports = Show;
+module.exports = Role;

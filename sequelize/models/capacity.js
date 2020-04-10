@@ -8,7 +8,6 @@ const Capacity = sequelize.define(
             type: Sequelize.INTEGER,
             allowNull: false,
             primaryKey: true,
-            // autoIncrement: true
         },
         capacity: {
             type: Sequelize.STRING,

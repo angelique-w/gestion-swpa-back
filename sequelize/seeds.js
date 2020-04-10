@@ -1,5 +1,5 @@
-const User = require("./models/users");
-const Prestation = require("./models/prestations");
+const User = require("./models/user");
+const Prestation = require("./models/prestation");
 
 const users = [
     {

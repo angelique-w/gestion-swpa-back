@@ -1,8 +1,8 @@
 // import des modèles pour créer les données solides
-const Role = require("./models/roles");
-const Capacity = require("./models/capacities");
-const Contract = require("./models/contracts");
-const User = require("./models/users");
+const Role = require("./models/role");
+const Capacity = require("./models/capacity");
+const Contract = require("./models/contract");
+const User = require("./models/user");
 
 Role.create({ id: 1, role: "superAdmin" });
 Role.create({ id: 2, role: "admin" });
