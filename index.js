@@ -15,7 +15,8 @@ app.use(express.json());
 // Routes
 app.use("/users", require("./routes/users.route.js"));
 app.use("/prestations", require("./routes/prestations.route.js"));
-app.use("/usersPrestations", require("./routes/users_prestations.route"));
+app.use("/usersPrestations", require("./routes/users_prestations.route.js"));
+app.use("/auth", require("./routes/auth.route.js"));
 
 async function main() {
     try {

@@ -18,6 +18,7 @@ Contract.create({ id: 3, contract: "autre" });
 User.create({
     name: "Wons",
     firstname: "Angelique",
+    pseudo: "angelique_wons",
     password: "angeliqueSuperAdmin",
     capacityId: 1,
     roleId: 1,

@@ -5,6 +5,7 @@ const users = [
     {
         name: "McFarlane",
         firstname: "Andrew",
+        pseudo: "andrew_mcfarlane",
         address: "Hastingues",
         phoneNumber: "06 06 06 06 06",
         eMail: "mcf@gmail.com",
@@ -15,6 +16,7 @@ const users = [
     {
         name: "Membre",
         firstname: "Ex_Membre1",
+        pseudo: "ex_membre1_membre",
         address: "Bayonne",
         phoneNumber: "06 06 06 06 06",
         eMail: "membre@gmail.com",
@@ -24,6 +26,7 @@ const users = [
     {
         name: "Membre",
         firstname: "Ex_Membre2",
+        pseudo: "ex_membre2_membre",
         address: "Dax",
         phoneNumber: "06 06 06 06 06",
         eMail: "membre@gmail.com",
@@ -32,7 +35,8 @@ const users = [
     },
     {
         name: "Membre",
-        firstname: "Ex_Membre2",
+        firstname: "Ex_Membre3",
+        pseudo: "ex_membre3_membre",
         address: "Boucau",
         phoneNumber: "06 06 06 06 06",
         eMail: "membre@gmail.com",

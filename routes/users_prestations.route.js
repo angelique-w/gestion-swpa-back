@@ -29,9 +29,9 @@ router.get("/", (req, res) => {
 });
 
 // Get one user_prestation
-router.get("/:UserUuid/:PrestationId", (req, res) => {
-    const UserUuid = req.params.UserUuid;
-    const PrestationId = req.params.PrestationId;
+router.get("/", (req, res) => {
+    const UserUuid = req.query.UserUuid;
+    const PrestationId = req.query.PrestationId;
     UserPrestation.findOne({
         where: {
             UserUuid: UserUuid,
@@ -79,9 +79,9 @@ router.post("/", (req, res) => {
 });
 
 // Put a user_prestation
-router.put("/:UserUuid/:PrestationId", (req, res) => {
-    const UserUuid = req.params.UserUuid;
-    const PrestationId = req.params.PrestationId;
+router.put("/", (req, res) => {
+    const UserUuid = req.query.UserUuid;
+    const PrestationId = req.query.PrestationId;
     const presence = req.body.presence;
     const car = req.body.car;
     const user_prestation = {
@@ -95,10 +95,6 @@ router.put("/:UserUuid/:PrestationId", (req, res) => {
             UserUuid: UserUuid,
             PrestationId: PrestationId,
         },
-        include: [
-            { model: User, include: [Capacity, Role] },
-            { model: Prestation, include: Contract },
-        ],
     })
         .then((resultUserPrestation) =>
             res.status(200).json(resultUserPrestation)
@@ -112,9 +108,9 @@ router.put("/:UserUuid/:PrestationId", (req, res) => {
 });
 
 // Delete a user_prestation
-router.delete("/:UserUuid/:PrestationId", (req, res) => {
-    const UserUuid = req.params.UserUuid;
-    const PrestationId = req.params.PrestationId;
+router.delete("/", (req, res) => {
+    const UserUuid = req.query.UserUuid;
+    const PrestationId = req.query.PrestationId;
     UserPrestation.destroy({
         where: {
             UserUuid: UserUuid,

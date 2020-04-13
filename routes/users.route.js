@@ -43,6 +43,7 @@ router.get("/:uuid", (req, res) => {
 router.post("/", (req, res) => {
     const name = req.body.name;
     const firstname = req.body.firstname;
+    const pseudo = `${firstname.toLowerCase()}_${name.toLowerCase()}`;
     const address = req.body.address;
     const phoneNumber = req.body.phoneNumber;
     const eMail = req.body.eMail;
@@ -52,6 +53,7 @@ router.post("/", (req, res) => {
     const user = {
         name,
         firstname,
+        pseudo,
         address,
         phoneNumber,
         eMail,
@@ -73,6 +75,7 @@ router.post("/", (req, res) => {
 router.put("/:uuid", (req, res) => {
     const uuid = req.params.uuid;
     const name = req.body.name;
+    const pseudo = `${firstname.toLowerCase()}_${name.toLowerCase()}`;
     const firstname = req.body.firstname;
     const password = req.body.password;
     const address = req.body.address;
@@ -84,6 +87,7 @@ router.put("/:uuid", (req, res) => {
     const user = {
         name,
         firstname,
+        pseudo,
         password,
         address,
         phoneNumber,

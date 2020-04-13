@@ -18,6 +18,10 @@ const User = sequelize.define(
             type: Sequelize.STRING,
             allowNull: false,
         },
+        pseudo: {
+            type: Sequelize.STRING,
+            allowNull: false,
+        },
         address: {
             type: Sequelize.TEXT,
             allowNull: true,
